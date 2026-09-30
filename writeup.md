@@ -269,7 +269,7 @@ admin'; SELECT pg_sleep(3)-- → 502 после 23s ← ПОДТВЕРЖДЕНИ
 ### 2.6 Что ТОЧНО не работает (исключено)
 
 | Вектор | Результат |
-|--------|----------|
+|--------|-----------|
 | HTTP XXE / SSRF | lxml не делает HTTP-запросы для entities |
 | XInclude | Не обрабатывается парсером |
 | Parameter entities | Отклоняются |
@@ -333,7 +333,7 @@ DB: terminal
 ## Нерешенные задачи
 
 | Задача | Статус | Приоритет |
-|--------|--------|----------|
+|--------|--------|-----------|
 | CaspiTerminal PROBE_SECRET (LLEHS) | SQLi подтверждена, экстракция из БД в процессе | **ВЫСОКИЙ (9000 pts)** |
 | CityPortal SQLi | Connection timeout | Средний |
 | Dastarkhan partner access | Не исследовано | Низкий |
@@ -344,7 +344,7 @@ DB: terminal
 ## Написанные скрипты
 
 | Скрипт | Содержание |
-|--------|----------|
+|--------|-----------|
 | `round22_ssti.py` | SSTI, HTTP XXE debug, модули приложения, VPN PG scan, эндпоинты, конфиг, derived keys |
 | `round23_breakthrough.py` | Flag files, XInclude, parameter entities, /proc, секреты, directory listing, PG client, brute-force |
 | `round24_custody.py` | Custody HTML, эндпоинты, extreme tickets, env vars, секреты, directory listing, 65K brute-force |
